@@ -1,34 +1,33 @@
 .sobre-nos {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente o conteúdo */
-    align-items: center; /* Centraliza verticalmente, se for necessário */
-    flex-direction: column; /* Garante que os elementos estejam um abaixo do outro */
-    text-align: center; /* Centraliza o texto no container */
-    margin-top: 0px; /* Ajusta o espaçamento superior, se necessário */
+    text-align: center;
+    padding-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .conteudo {
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 300;
-    color: var(--thm-black);
+    color: black;
     font-size: 16px;
-    text-align: justify; /* Justifica o texto para ficar mais organizado */
+    text-align: justify;
     line-height: 35px;
 }
 
 .colunas {
-    display: flex; /* Faz as colunas ficarem lado a lado */
-    justify-content: space-between; /* Espaço entre as colunas */
-    gap: 20px; /* Espaçamento entre as duas divs */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .coluna {
-    flex: 1; /* Faz com que as colunas tenham o mesmo tamanho */
-    padding: 10px; /* Ajusta o espaçamento interno */
+    flex: 1;
+    padding: 10px;
 }
 
-.sobre-nos {
-    padding-top: 80px;
-    margin-left: 20px;
-    margin-right: 20px;
+.avatar-claro {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
 }
