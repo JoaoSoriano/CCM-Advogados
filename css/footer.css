@@ -1,0 +1,68 @@
+.footer {
+    background-color: #241404;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo-escura {
+    width: 475px;
+    height: 140px;
+    margin-right: 50px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-info a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.instagram-icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    filter: invert(100%);
+    transition: transform 0.3s ease;
+}
+
+.instagram-icon:hover {
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+}
