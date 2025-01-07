@@ -1,0 +1,52 @@
+.nome-perfil {
+    display: flex;
+    margin-top: 35px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+    background-color: white;
+    border-radius: 1%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.perfil-page {
+    margin-bottom: 100px;
+}
+
+.profile-photo {
+    flex: 1;
+    max-width: 400px;
+    margin-right: 40px;
+}
+
+.profile-photo img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.profile-curriculum {
+    flex: 2;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-photo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

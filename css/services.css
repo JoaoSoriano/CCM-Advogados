@@ -13,7 +13,7 @@
     margin-right: 25px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-gap: 35px;
     justify-items: center;
     padding-bottom: 50px;
 }
