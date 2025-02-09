@@ -1,21 +1,32 @@
 .footer {
-    background-color: #241404;
-    padding: 20px;
+    background-color: #201401;
+    padding: 20px; /* Mantém o padding */
+    padding-left: 20px; /* Garante espaço na esquerda */
+    padding-right: 20px; /* Adiciona espaço na direita */
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Para mobile: empilha os elementos */
     align-items: center;
     color: #fff;
+    width: 100%;
+    box-sizing: border-box; /* Evita que padding ultrapasse a largura total */
 }
 
 .footer-content {
     display: flex;
     align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Evita que fique muito esticado em telas grandes */
+    margin: 0 auto;
 }
 
 .logo-escura {
-    width: 475px;
-    height: 140px;
-    margin-right: 50px;
+    max-width: 100%; /* Impede que a imagem ultrapasse a tela */
+    width: 475px; /* Mantém a largura mínima desejada */
+    height: auto; /* Mantém a proporção correta */
+    display: block; /* Evita espaços extras ao redor da imagem */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0 15px; /* Adiciona espaçamento lateral para evitar contato com a borda */
+    box-sizing: border-box; /* Evita que o padding aumente a largura total */
 }
 
 .footer-info {
@@ -65,4 +76,83 @@ a {
     color: #fff;
     font-size: 12px;
     margin: 0;
+}
+
+/* ----- RESPONSIVIDADE ----- */
+
+/* Tablets (médio) */
+@media only screen and (max-width: 1024px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        background-color: #201401;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-escura {
+        margin: 0 0 20px 0;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+
+    .footer-info a {
+        margin: 10px auto 0;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        background-color: #201401;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container {
+        text-align: center; /* Garante centralização */
+        padding: 0 15px; /* Adiciona espaçamento para evitar que a logo encoste na borda */
+    }
+
+    .logo-escura {
+        margin: 0 0 15px 0;
+    }
+
+    .footer-info {
+        padding: 10px; /* Adiciona espaço interno */
+        text-align: center; /* Centraliza os textos e o Instagram */
+        word-wrap: break-word; /* Evita cortes de texto */
+        max-width: 100%; /* Evita overflow lateral */
+        font-size: 13px;
+    }
+
+    .footer-info p {
+        margin: 8px 0;
+        word-break: break-word;
+    }
+
+    .footer-info a {
+        margin-top: 10px;
+    }
+
+    .instagram-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-bottom {
+        width: 100vw;
+    }
 }

@@ -7,12 +7,14 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/Avatar Carrazzoni Campelo e Medeiros Ícone Escuro.png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/team.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/diferenciais.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/responsiveTeam.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         body.hidden {
@@ -21,75 +23,68 @@
     </style>
 </head>
 <body class="hidden">
+
     <header>
-        <div>
-            <div class="menu-area">
-                <div class="container">
-                    <div class="main-header-three__bottom-inner">
-                        <div class="main-header-three__bottom-left">
-                            <div class="logo-box-one">
-                                <img src="img/Carrazzoni Campelo e Medeiros Horizontal_2.jpg" alt="Logo">
-                            </div>
-                        </div>
+        <nav>
+            <!-- Logo -->
+            <div class="header-logo">
+                <img src="img/Carrazzoni Campelo e Medeiros Horizontal_2.jpg" alt="Logo do Escritório">
+            </div>
 
-                        <div class="main-header-three__bottom-middle">
-                            <div class="menu-area__inner">
-                                <div class="mobile-nav-toggler">
-                                    <i class="fas fa-bars"></i>
-                                </div>
-                                <div class="menu-wrap">
-                                    <nav class="menu-nav">
-                                        <div class="navbar-wrap main-menu">
-                                            <ul class="navigation">
-                                                <li><a href="#sobre-nos">Sobre Nós</a></li>
-                                                <li><a href="#advogados">Advogados</a></li>
-                                                <li><a href="#areas-atuacao">Áreas de Atuação</a></li>
-                                                <li><a href="#diferenciais">Diferenciais</a></li>
-                                            </ul>
-                                        </div>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Menu Hamburguer -->
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
 
-                        <div class="main-header-three__bottom-right">
-                            <div class="header-btn-box-one">
-                                <a class="thm-btn" href="contato.html">
-                                    <span class="txt">
-                                        Contato ⇁
-                                        <i class="icon-next"></i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
+            <!-- Navegação e Botão de Contato no Submenu -->
+            <div>
+                <div class="header-navigation">
+                    <ul class="menu-list">
+                        <li><a href="#sobre-nos">Sobre Nós</a></li>
+                        <li><a href="#advogados">Advogados</a></li>
+                        <li><a href="#areas-atuacao">Áreas de Atuação</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li class="mobile-only"><a href="contato.html">Contato</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-
+            <!-- Botão de contato -->
+            <div>
+                <div class="header-contact">
+                    <a class="contact-button" href="contato.html">
+                        <span class=contact-text>
+                            Contato ⇁
+                            <i class="icon-next"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
     </header>
-
+    
     <div class="hero">
-        <img src="img/_DSC9883.jpg" alt="Imagem da Equipe">
-        <div class="hero-text">
-            <h1 class="hero-color">Ajudamos sua Empresa a se tornar mais Segura e Lucrativa</h1>
+        <video autoplay loop muted playsinline>
+            <source src="img/DJI_20250208130400_0234_D.MP4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+        <div class="color-overlay"></div>
+        <div class="hero-content">
+            <h1>Ajudamos sua Empresa a se tornar mais segura e lucrativa</h1>
+            <p>Com a nossa expertise, você reduz riscos, melhora processos e maximiza resultados. 
+                Não deixe sua empresa vulnerável a falhas que podem comprometer seu crescimento. 
+                Invista em proteção e garanta um futuro próspero.</p>
         </div>
     </div>
 
     <section class="sobre-nos" id="sobre-nos">
         <div class="escritorio">
-            <div class="sec-title-three">
-                <div class="sub-title">
-                    <h3>Sobre Nós</h3>
-                </div>
-                <h2>
-                    Carrazzoni, Campêlo & Medeiros Advocacia
-                </h2>
+            <div class="sub-title">
+                <h3>Sobre Nós</h3>
             </div>
-            <div class="colunas">
-                <div class="coluna">
-                    <p class="conteudo">
+            <div class="coluna">
+                <p class="conteudo">
                         O escritório nasceu a partir da união de especialidades e
                         propósitos em comum que objetivam auxiliar Pessoas Jurídicas
                         e Físicas na solução dos conflitos de forma simples e célere,
@@ -101,21 +96,8 @@
                         prestados até o atendimento ao cliente. Os profissionais estão sempre atualizados
                         sobre as últimas mudanças na legislação e na jurisprudência, de modo a oferecer a
                         melhor orientação possível aos clientes.
-                    </p>
-                </div>
-                <div class="coluna">
-                    <p class="conteudo">
-                        Além disso, têm conhecimento aprofundado das leis e regulamentações
-                        específicas da área da saúde de modo a fornecer uma orientação adequada aos
-                        clientes.
-                        Quando estamos em sintonia com as partes, podemos melhor conduzi-las à
-                        construção de um diálogo colaborativo e efetivo na circunstância de igualdade de
-                        frequências, tanto no âmbito emocional, como no prático e o litígio não é a única
-                        maneira de solucionar uma determinada questão.
-                    </p>
-                    <img src="img/Avatar Carrazzoni Campelo e Medeiros Ícone.png" alt="Avatar" class="avatar-claro">
-                </div>
-            </div>             
+                </p>
+            </div>            
         </div>
     </section>
 
@@ -132,21 +114,15 @@
         </div>
         <!--Start Team Two Single-->
         <div class="socios">
-
             <div class="team-two__single">
                 <div class="team-two__single-overlay-bg"></div>
                 <div class="team-two__single-img">
-                    <img src="img/_DSC9984.jpg" alt="image">
+                    <a href="larissa.html"><img src="img/_DSC9984.jpg" alt="image"></a>
                     <div class="social-share-box">
                         <span class="icon-plus">
                             <img src="img/plus.svg" class="plus" alt="plus">
                         </span>
                         <ul class="clearfix">
-                            <li>
-                                <a href="larissa.html">
-                                    <img src="img/library.svg" class="social-icon" alt="Currículo">
-                                </a>
-                            </li>
                             <li>
                                 <a href="https://www.instagram.com/larissacarrazzoni.adv?igsh=ZmFoaHR0ZHZ4NTM3" target="_blank">
                                     <img src="img/instagram.svg" class="social-icon" alt="instagram">
@@ -155,6 +131,11 @@
                             <li>
                                 <a href="https://wa.me/5581991517293" target="_blank">
                                     <img src="img/whatsapp.svg" class="social-icon" alt="whatsapp">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/icons8-linkedin.svg" class="social-icon" alt="LinkedIn">
                                 </a>
                             </li>
                         </ul>
@@ -166,22 +147,17 @@
                 </div>
             </div>
         <!--End Team Two Single-->
-
+    
         <!--Start Team Two Single-->
             <div class="team-two__single">
                 <div class="team-two__single-overlay-bg"></div>
                 <div class="team-two__single-img">
-                    <img src="img/_DSC9962.jpg" alt="image">
+                    <a href="igor.html"><img src="img/_DSC9962.jpg" alt="image"></a>
                     <div class="social-share-box">
                         <span class="icon-plus">
                             <img src="img/plus.svg" class="plus" alt="plus">
                         </span>
                         <ul class="clearfix">
-                            <li>
-                                <a href="igor.html">
-                                    <img src="img/library.svg" class="social-icon" alt="Currículo">
-                                </a>
-                            </li>
                             <li>
                                 <a href="https://www.instagram.com/igorcampelo_adv?igsh=MWMwZ2tqMGlsbnVwcA==" target="_blank">
                                     <img src="img/instagram.svg" class="social-icon" alt="instagram">
@@ -190,6 +166,11 @@
                             <li>
                                 <a href="https://wa.me/5581996085372" target="_blank">
                                     <img src="img/whatsapp.svg" class="social-icon" alt="whatsapp">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/icons8-linkedin.svg" class="social-icon" alt="LinkedIn">
                                 </a>
                             </li>
                         </ul>
@@ -201,21 +182,16 @@
                 </div>
             </div>
         <!--End Team Two Single-->
-
+    
         <!--Start Team Two Single-->
             <div class="team-two__single">
                 <div class="team-two__single-img">
-                    <img src="img/_DSC9801.jpg" alt="image">
+                    <a href="maurilio.html"><img src="img/_DSC9801.jpg" alt="image"></a>
                     <div class="social-share-box">
                         <span class="icon-plus">
                             <img src="img/plus.svg" class="plus" alt="plus">
                         </span>
                         <ul>
-                            <li>
-                                <a href="maurilio.html">
-                                    <img src="img/library.svg" class="social-icon" alt="Currículo">
-                                </a>
-                            </li>
                             <li>
                                 <a href="https://www.instagram.com/mauriliorodrigues.adv?igsh=MXdncG96MjkwamdzdQ==" target="_blank">
                                     <img src="img/instagram.svg" class="social-icon" alt="instagram">
@@ -224,6 +200,11 @@
                             <li>
                                 <a href="https://wa.me/5583999643070" target="_blank">
                                     <img src="img/whatsapp.svg" class="social-icon" alt="whatsapp">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/icons8-linkedin.svg" class="social-icon" alt="LinkedIn">
                                 </a>
                             </li>
                         </ul>
@@ -237,8 +218,7 @@
         </div>
     </section>
 
-    <section id="areas-atuacao">
-
+    <!-- <section id="areas-atuacao">
         <div class="servicos">
             <div class="sec-title-three">
                 <div>
@@ -251,7 +231,7 @@
         </div>
         
         <div class="areas-atuacao">
-            <!-- Área de Atuação 1 -->
+
             <div class="area-item">
                 <div class="icon-container">
                     <img src="img/local_hospital_24dp_E8EAED.svg" alt="Ícone 1" style="background-color: rgba(225, 149, 28, 0.873); border-radius: 20%;">
@@ -260,7 +240,6 @@
                 <p>Descrição da área de atuação 1</p>
             </div>
         
-            <!-- Área de Atuação 2 -->
             <div class="area-item">
                 <div class="icon-container">
                     <img src="img/person_24dp_E8EAED.svg" alt="Ícone 2" style="background-color: rgba(225, 149, 28, 0.873); border-radius: 20%;">
@@ -268,8 +247,7 @@
                 <h4 class="font-correct">Cível</h4>
                 <p>Descrição da área de atuação 2</p>
             </div>
-        
-            <!-- Área de Atuação 3 -->
+
             <div class="area-item">
                 <div class="icon-container">
                     <img src="img/work_24dp_E8EAED.svg" alt="Ícone 3" style="background-color: rgba(225, 149, 28, 0.873); border-radius: 20%;">
@@ -278,7 +256,6 @@
                 <p>Descrição da área de atuação 3</p>
             </div>
         
-            <!-- Área de Atuação 4 -->
             <div class="area-item">
                 <div class="icon-container">
                     <img src="img/language_24dp_E8EAED.svg" alt="Ícone 4" style="background-color: rgba(225, 149, 28, 0.873); border-radius: 20%;">
@@ -287,7 +264,6 @@
                 <p>Descrição da área de atuação 4</p>
             </div>
         
-            <!-- Área de Atuação 5 -->
             <div class="area-item">
                 <div class="icon-container">
                     <img src="img/shopping_cart_24dp_E8EAED.svg" alt="Ícone 5" style="background-color: rgba(225, 149, 28, 0.873); border-radius: 20%;">
@@ -296,7 +272,6 @@
                 <p>Descrição da área de atuação 5</p>
             </div>
         
-            <!-- Área de Atuação 6 -->
             <div class="area-item">
                 <div class="icon-container">
                     <img src="img/balance_24dp_E8EAED.svg" alt="Ícone 6" style="background-color: rgba(225, 149, 28, 0.873); border-radius: 20%;">
@@ -305,7 +280,6 @@
                 <p>Descrição da área de atuação 6</p>
             </div>
         
-            <!-- Área de Atuação 7 -->
             <div class="area-item">
                 <div class="icon-container">
                     <img src="img/elderly_24dp_E8EAED.svg" alt="Ícone 7" style="background-color: rgba(225, 149, 28, 0.873); border-radius: 20%;">
@@ -314,7 +288,6 @@
                 <p>Descrição da área de atuação 7</p>
             </div>
         
-            <!-- Área de Atuação 8 -->
             <div class="area-item">
                 <div class="icon-container">
                     <img src="img/apartment_24dp_E8EAED.svg" alt="Ícone 8" style="background-color: rgba(225, 149, 28, 0.873); border-radius: 20%;">
@@ -323,10 +296,10 @@
                 <p>Descrição da área de atuação 8</p>
             </div>
         </div>      
-    </section>
+    </section> -->
 
     <section class="dif" id="diferenciais">
-        <div class="diferenciais">
+        <!-- <div class="diferenciais">
             <div class="sec-title-three">
                 <div>
                     <h2>Diferenciais</h2>
@@ -335,12 +308,12 @@
                     Por que escolher a CCM Advocacia?
                 </h3>
             </div>
-        </div> 
+        </div>  -->
 
         <div class="diferenciais-container">
-            <div class="imagem-hospital">
+            <!-- <div class="imagem-hospital">
                 <img src="img/Depositphotos_155109690_S.jpg" alt="Imagem do escritório">
-            </div>
+            </div> -->
             <div class="texto-lateral">
                 <h4 class="font-correct" style="color: rgba(225, 149, 28, 0.873);">Direito para Profissionais da Saúde</h4>
                 <p>
@@ -375,9 +348,9 @@
                     jurídico estratégico para decisões informadas.
                 </p>
             </div>
-            <div class="imagem-escritorio-tres">
+            <!-- <div class="imagem-escritorio-tres">
                 <img src="img/_DSC9892.jpg" alt="Imagem do escritório">
-            </div>
+            </div> -->
         </div>
 
         <div class="diferenciais-container">
@@ -406,7 +379,9 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <img src="img/Carrazzoni Campelo e Medeiros Horizontal Escuro_2.jpg" alt="Logo Escura" class="logo-escura">
+            <div class="logo-container">
+                <img src="img/Carrazzoni Campelo e Medeiros Horizontal Escuro_2.jpg" alt="Logo Escura" class="logo-escura">
+            </div>
             <div class="footer-info">
                 <p>Empresarial Selecta Center, sala 404 - Rua Estado de Israel, nº 262, Ilha do Leite - Recife/PE, 50070-420</p>
                 <p>Telefone: (81) 99865-6909</p>

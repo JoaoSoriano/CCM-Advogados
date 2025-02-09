@@ -1,0 +1,90 @@
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+
+  .team-two__single-content p {
+	  font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+  .team-two__single-content {
+		padding: 16px 45px 17px;
+	}
+
+	.team-two__single::before {
+		left: 20px;
+	}
+
+	.team-two__single-content p {
+		font-size: 16px;
+	}
+
+	.team-two__single::after {
+		left: 20px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+  .socios {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; /* Espaçamento entre os elementos */
+      flex-wrap: wrap; /* Permite quebra caso a tela fique muito pequena */
+  }
+
+  .team-two__single {
+      width: 30%; /* Define um tamanho fixo para cada card */
+      margin: 0; /* Remove espaçamentos extras */
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .team-two__single {
+		max-width: 500px;
+		width: 100%;
+		margin: 0 auto 30px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+  .socios {
+    padding: 0 15px; /* Margem nas laterais */
+}
+
+  .team-two__single-content {
+		padding: 16px 45px 17px;
+	}
+
+	.team-two__single::before {
+		left: 20px;
+	}
+
+	.team-two__single-content p {
+		font-size: 16px;
+	}
+
+	.team-two__single::after {
+		left: 20px;
+	}
+
+	.team-two__single-img .social-share-box ul li a {
+		height: 40px;
+		width: 40px;
+		font-size: 15px;
+	}
+
+	.team-two__single-img .social-share-box span {
+		width: 40px;
+		height: 40px;
+		font-size: 15px;
+		line-height: 40px;
+	}
+
+	.team-two__single {
+		width: 90%;
+		margin: 0 auto 30px;
+	}
+}

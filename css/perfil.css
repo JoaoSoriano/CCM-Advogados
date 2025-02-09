@@ -1,3 +1,99 @@
+.header-perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 20px; /* Adiciona espaçamento nas laterais */
+}
+
+.header-logo img {
+    max-width: 100%; /* Garante que a imagem nunca ultrapasse o header */
+    height: auto; /* Mantém a proporção */
+    max-width: 250px; /* Tamanho padrão */
+}
+
+/* Botão de Contato */
+.header-contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px 30px 10px 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    line-height: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 4px;
+    transition: all 0.3s linear;
+    z-index: 2;
+    text-decoration: none;
+}
+
+.contact-button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    transform: scaleX(1);
+    transition-duration: 800ms;
+    background-color: black;
+    z-index: -1;
+}
+
+.contact-button:hover:after {
+    transform: scaleX(0);
+    transition-duration: 1500ms;
+}
+
+.contact-button:before {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    right: -50px;
+    content: "";
+    background: #bb8a28;
+    transform: translateY(100%);
+    transition-duration: 800ms;
+    z-index: 1;
+    bottom: 0;
+}
+
+.contact-button:hover:before {
+    left: 0;
+    right: 0;
+    transform: translateX(0);
+}
+
+.contact-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.header-contact .contact-button:before {
+    background: #bb8a28;
+}
+
+.header-contact .contact-button:hover {
+    color: black;
+}
+
 .nome-perfil {
     display: flex;
     margin-top: 35px;
@@ -39,7 +135,32 @@
     color: #555;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 748px) {
+
+    .header-perfil {
+        height: auto; /* Permite ajuste dinâmico */
+        padding: 10px 15px; /* Mantém espaçamento nas laterais */
+    }
+
+    .header-logo img {
+        max-width: 200px; /* Reduz a logo para caber melhor */
+    }
+
+    .contact-button {
+        padding: 6px 20px; /* Reduz o tamanho do botão */
+        font-size: 14px; /* Diminui a fonte do botão */
+        line-height: normal; /* Ajusta a altura do texto */
+        margin-right: 10px; /* Mantém margem na lateral */
+    }
+
+    .nome-perfil {
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .sec-title-three h2 {
+        font-size: 36px; /* Reduz o tamanho da fonte */
+    }
+
     .profile-section {
         flex-direction: column;
         align-items: flex-start;
@@ -48,5 +169,23 @@
     .profile-photo {
         margin-right: 0;
         margin-bottom: 20px;
+    }
+}
+
+/* Ajusta a altura do header no modo paisagem (landscape) */
+@media (max-width: 1024px) and (orientation: landscape) {
+    .header-perfil {
+        height: 22vh; /* Aumenta a altura do header */
+    }
+
+    .header-logo img {
+        max-width: 250px; /* Mantém um tamanho adequado para a logo */
+    }
+
+    .contact-button {
+        padding: 6px 20px; /* Reduz o tamanho do botão */
+        font-size: 14px; /* Diminui a fonte do botão */
+        line-height: normal; /* Ajusta a altura do texto */
+        margin-right: 10px; /* Mantém margem na lateral */
     }
 }
