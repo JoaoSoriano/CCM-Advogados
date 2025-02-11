@@ -1,18 +1,21 @@
 /* Estilos Gerais */
 html {
     scroll-behavior: smooth;
+    height: 100vh; /* Usa a altura dinâmica do viewport */
+    overflow-x: hidden; /* Previne rolagem lateral indesejada */
 }
 
 nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-content: space-between;
   align-items: center;
   height: 10vh;
   flex-wrap: nowrap;
-  position: fixed; /* Fixa a div no topo, mesmo ao rolar a página */
+  position: fixed; 
   top: 0;
   left: 0;
-  width: 100%; /* Ocupa toda a largura da tela */
+  width: 100%;
   background-color: #ffffff; /* Fundo branco */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil abaixo da div */
   z-index: 1000; /* Garante que o header fique acima de outros elementos */
@@ -24,25 +27,23 @@ nav {
   display: flex; /* Garante alinhamento fácil com Flexbox */
   align-items: center; /* Alinha verticalmente ao centro com os demais elementos */
   max-width: 300px; /* Define um tamanho máximo adequado para a logo */
+  margin-left: 60px;
 }
 
 /* Navegação */
 .header-navigation {
 	display: flex; /* Torna o container flexível */
+  grid-column: span 4;
   align-items: center; /* Garante alinhamento vertical ao centro com a logo */
   justify-content: center; /* Posiciona a navegação no centro do header */
 }
 
 .menu-list {
 	display: flex; /* Organiza os itens em linha */
-  gap: 20px; /* Espaçamento entre os itens da lista */
+  gap: 40px; /* Espaçamento entre os itens da lista */
   list-style: none; /* Remove os marcadores da lista */
   margin: 0; /* Remove margens padrão */
   padding: 0; /* Remove espaçamento padrão */
-}
-
-.menu-list li + li {
-    margin-left: 30px;
 }
 
 .menu-list li a {
@@ -69,12 +70,12 @@ nav {
     display: inline-flex;
     align-items: center;
     overflow: hidden;
-    padding: 10px 30px 10px 30px;
+    padding: 5px 15px;
     margin-right: 30px;
     margin-left: 30px;
     background-color: transparent;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 45px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -150,10 +151,20 @@ nav {
 .mobile-menu {
   cursor: pointer;
   display: none;
+  margin-right: 60px;
+  grid-column: 5;
 }
 
 .mobile-only {
   display: none; /* Esconde no desktop */
+}
+
+.mobile-menu-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column: span 4;
+  align-items: center;
+  gap: 4px;
 }
 
 
@@ -163,15 +174,15 @@ nav {
   }
 
   .menu-list {
+    display: flex;
     position: absolute;
     top: 100%;
     right: 0;
     width: 80vw;
     height: 100vh;
-    background: #ffffff;
+    background-color: #fff; 
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
     z-index: 999; /* Garante que fique sobre os outros elementos */
@@ -179,6 +190,16 @@ nav {
     border-left: 1px solid #ddd; 
     padding: 0; /* Adiciona espaçamento para evitar cortes */
     overflow-y: auto;
+    padding-top: 60px;
+  }
+
+  .mobile-menu-container {
+    grid-column: span 2;
+  }
+
+  .header-logo {
+    grid-column: span 3;
+    margin-left: 0;
   }
 
   .menu-list li {
@@ -186,7 +207,6 @@ nav {
     text-align: center;
     opacity: 0;
     width: 100%; /* Faz com que os itens ocupem toda a largura */
-    border-bottom: 1px solid #ddd; /* Linha de separação */
   }
 
   .menu-list li a {

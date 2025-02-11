@@ -14,7 +14,7 @@ header {
     padding-right: 20px;
 }
   
-h1 {
+h2 {
     margin: 0;
     font-size: 2em;
 }
@@ -72,7 +72,7 @@ h1 {
 }
 
 .icon-container {
-    background-color:  #bb8a28;
+    background-color:  #a49483;
     border-radius: 50%;
     padding: 10px;
     width: 40px;
@@ -137,29 +137,10 @@ textarea {
     resize: vertical;
 }
 
-.thm-btn {
-    background-color: white;
-    color: black;
-    border-color: #bb8a28;
-    padding: 12px 20px;
-    font-size: 14px;
+/* .enviar{
     cursor: pointer;
-    border-radius: 25px;
-    transition: background 0.6s;
-    width: auto;
-    min-width: 140px;
-    align-self: center;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
-    margin: 15px auto;
-}
-
-.thm-btn:hover {
-    background-color: #bb8a28;
-    color: white;
-}
+    
+} */
 
 
 /* Responsividade */
@@ -209,10 +190,6 @@ textarea {
     }
 
     input, textarea {
-        width: 100%;
-    }
-
-    .thm-btn {
         width: 100%;
     }
 }

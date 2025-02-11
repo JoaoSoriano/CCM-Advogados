@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/team.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/services.css">
-    <link rel="stylesheet" href="css/diferenciais.css">
+    <link rel="stylesheet" href="css/areasAtuacao.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/responsiveTeam.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
     <style>
         body.hidden {
             visibility: hidden;
@@ -24,41 +24,40 @@
 </head>
 <body class="hidden">
 
-    <header>
+    <header class="header">
         <nav>
             <!-- Logo -->
             <div class="header-logo">
                 <img src="img/Carrazzoni Campelo e Medeiros Horizontal_2.jpg" alt="Logo do Escritório">
             </div>
-
-            <!-- Menu Hamburguer -->
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-
-            <!-- Navegação e Botão de Contato no Submenu -->
-            <div>
+            <div class="mobile-menu-container">
+                <!-- Menu Hamburguer -->
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+    
+                <!-- Navegação e Botão de Contato no Submenu -->
                 <div class="header-navigation">
                     <ul class="menu-list">
-                        <li><a href="#sobre-nos">Sobre Nós</a></li>
+                        <li><a href="sobrenos.html">Sobre Nós</a></li>
                         <li><a href="#advogados">Advogados</a></li>
                         <li><a href="#areas-atuacao">Áreas de Atuação</a></li>
                         <li><a href="#diferenciais">Diferenciais</a></li>
                         <li class="mobile-only"><a href="contato.html">Contato</a></li>
                     </ul>
                 </div>
-            </div>
-            <!-- Botão de contato -->
-            <div>
-                <div class="header-contact">
-                    <a class="contact-button" href="contato.html">
-                        <span class=contact-text>
-                            Contato ⇁
-                            <i class="icon-next"></i>
-                        </span>
-                    </a>
+                <!-- Botão de contato -->
+                <div>
+                    <div class="header-contact">
+                        <a class="contact-button" href="contato.html">
+                            <span class=contact-text>
+                                Contato ⇁
+                                <i class="icon-next"></i>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -72,34 +71,11 @@
         <div class="color-overlay"></div>
         <div class="hero-content">
             <h1>Ajudamos sua Empresa a se tornar mais segura e lucrativa</h1>
-            <p>Com a nossa expertise, você reduz riscos, melhora processos e maximiza resultados. 
+            <p> 
                 Não deixe sua empresa vulnerável a falhas que podem comprometer seu crescimento. 
                 Invista em proteção e garanta um futuro próspero.</p>
         </div>
     </div>
-
-    <section class="sobre-nos" id="sobre-nos">
-        <div class="escritorio">
-            <div class="sub-title">
-                <h3>Sobre Nós</h3>
-            </div>
-            <div class="coluna">
-                <p class="conteudo">
-                        O escritório nasceu a partir da união de especialidades e
-                        propósitos em comum que objetivam auxiliar Pessoas Jurídicas
-                        e Físicas na solução dos conflitos de forma simples e célere,
-                        promovendo maior satisfação para as partes envolvidas.
-                        O escritório adquiriu vida própria, com suas características advindas do que
-                        acreditamos, tornando-se uma marca moderna, acessível, criativa, profissional,
-                        digital e, principalmente, humana.
-                        Prezamos pela excelência, ética e profissionalismo desde a qualidade dos serviços
-                        prestados até o atendimento ao cliente. Os profissionais estão sempre atualizados
-                        sobre as últimas mudanças na legislação e na jurisprudência, de modo a oferecer a
-                        melhor orientação possível aos clientes.
-                </p>
-            </div>            
-        </div>
-    </section>
 
     <section class="team-two" id="advogados">
         <div class="socios-fundadores">
@@ -107,12 +83,12 @@
                 <div class="sub-title">
                     <h3>Advogados</h3>
                 </div>
-                <h2>
+                <h2 class="h2socios">
                     Sócios Fundadores
                 </h2>
             </div>
         </div>
-        <!--Start Team Two Single-->
+
         <div class="socios">
             <div class="team-two__single">
                 <div class="team-two__single-overlay-bg"></div>
@@ -134,7 +110,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="https://www.linkedin.com/in/larissa-carrazzoni-larissacarrazzoni-adv-912505206/?originalSubdomain=br">
                                     <img src="img/icons8-linkedin.svg" class="social-icon" alt="LinkedIn">
                                 </a>
                             </li>
@@ -146,9 +122,7 @@
                     <p>Advogada - OAB/PE nº 60.623</p>
                 </div>
             </div>
-        <!--End Team Two Single-->
-    
-        <!--Start Team Two Single-->
+
             <div class="team-two__single">
                 <div class="team-two__single-overlay-bg"></div>
                 <div class="team-two__single-img">
@@ -181,9 +155,7 @@
                     <p>Advogado - OAB/PE nº 60.547</p>
                 </div>
             </div>
-        <!--End Team Two Single-->
-    
-        <!--Start Team Two Single-->
+
             <div class="team-two__single">
                 <div class="team-two__single-img">
                     <a href="maurilio.html"><img src="img/_DSC9801.jpg" alt="image"></a>
@@ -203,7 +175,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="https://www.linkedin.com/in/maur%C3%ADlio-rodrigues-210240100/">
                                     <img src="img/icons8-linkedin.svg" class="social-icon" alt="LinkedIn">
                                 </a>
                             </li>
@@ -297,82 +269,50 @@
             </div>
         </div>      
     </section> -->
-
-    <section class="dif" id="diferenciais">
-        <!-- <div class="diferenciais">
-            <div class="sec-title-three">
-                <div>
-                    <h2>Diferenciais</h2>
-                </div>
-                <h3 class="sub-title">
-                    Por que escolher a CCM Advocacia?
-                </h3>
-            </div>
-        </div>  -->
-
-        <div class="diferenciais-container">
-            <!-- <div class="imagem-hospital">
-                <img src="img/Depositphotos_155109690_S.jpg" alt="Imagem do escritório">
-            </div> -->
-            <div class="texto-lateral">
-                <h4 class="font-correct" style="color: rgba(225, 149, 28, 0.873);">Direito para Profissionais da Saúde</h4>
-                <p>
-                    CCM Advocacia é um escritório especializado em Direito para Profissionais da Saúde, com uma
-                    vasta experiência em demandas em defesa das classes profissionais da saúde. Nosso time é composto
-                    por um departamento técnico altamente qualificado, preparado para oferecer soluções abrangentes
-                    em questões judiciais, contratuais, administrativas e regulatórias relacionadas a clínicas e hospitais.
-                    Além disso, atuamos de forma destacada no Consultivo e Contencioso do Direito Médico,
-                    Odontológico e Hospitalar, incluindo a defesa em processos éticos perante os Conselhos Regionais
-                    de Medicina e em litígios judiciais. Nosso compromisso é fornecer uma atuação abrangente e
-                    preventiva para clínicas, abordando aspectos éticos, sanitários e tributários, garantindo assim a
-                    conformidade e a segurança jurídica de nossos clientes.
-                    Estamos prontos para oferecer um suporte jurídico completo e especializado, assegurando a melhor
-                    defesa e orientação em todas as esferas do Direito para Profissionais da Saúde.
-                </p>
-            </div>
-        </div>
-
-        <div class="diferenciais-container">
-            <div class="texto-lateral">
-                <h4 class="font-correct" style="color: rgba(225, 149, 28, 0.873);">Acessoria Jurídica Preventiva</h4>
-                <p>
-                    Assessoria jurídica preventiva é fundamental para a
-                    segurança e eficiência da sua clínica médica. Com nossa
-                    vasta experiência, identificamos e mitigamos riscos legais,
-                    garantindo conformidade e tranquilidade para que você
-                    possa focar no atendimento aos pacientes. Entre os
-                    principais benefícios estão a redução de riscos, prevenção
-                    de problemas legais, economia de recursos ao evitar
-                    custos com litígios, e a garantia de que todas as operações
-                    estejam dentro da lei. Além disso, oferecemos suporte
-                    jurídico estratégico para decisões informadas.
-                </p>
-            </div>
-            <!-- <div class="imagem-escritorio-tres">
-                <img src="img/_DSC9892.jpg" alt="Imagem do escritório">
-            </div> -->
-        </div>
-
-        <div class="diferenciais-container">
-            <div class="texto-ultimo">
-                <h4 class="ultimo-h4" style="color: rgba(225, 149, 28, 0.873);">Privacidade e Proteção de Dados</h4>
-                <p>
-                    A CCM Advocacia é referência em assessoria jurídica
-                    preventiva para clínicas na implementação da LGPD.
-                    Nossa equipe especializada oferece consultoria e
-                    adequação, realizando avaliações de conformidade e
-                    criação de políticas internas. Também proporcionamos
-                    treinamento para capacitação de colaboradores na correta
-                    aplicação da LGPD, além de análise de riscos para
-                    identificar e mitigar riscos no tratamento de dados
-                    pessoais. Nossa expertise inclui a criação e revisão de
-                    contratos e políticas de privacidade, bem como
-                    atendimento a incidentes com respostas rápidas e eficazes.
-                </p>
-                <p> Oferecemos ainda assessoria contínua, monitorando e
-                    atualizando as práticas de proteção de dados. Garanta a
-                    conformidade da sua clínica com a LGPD e proteja os
-                    dados dos seus pacientes.</p>
+    
+    <section class="areas-atuacao">
+        <h2 class="h2areas-atuacao">
+            Áreas de Atuação
+        </h2>
+        <div class="container swiper">
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="areaSaude.html" class="card-link">
+                            <img src="img/Depositphotos_155109690_S.jpg" alt="Imagem Médico" class="card-image">
+                            <h2 class="card-title">Direito para Profissionais da Saúde</h2>
+                            <button class="card-button
+                            material-symbols-outlined">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="areaAssPrev.html" class="card-link">
+                        <img src="img/_DSC9892.jpg" alt="Imagem Escritório" class="card-image">
+                        <h2 class="card-title">Assessoria Jurídica Preventiva</h2>
+                        <button class="card-button
+                        material-symbols-outlined">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="areaPrivDados.html" class="card-link">
+                            <img src="img/Depositphotos_59212289_XL.jpg" alt="Imagem Médico" class="card-image">
+                            <h2 class="card-title">Privacidade e Proteção de Dados</h2>
+                            <button class="card-button
+                            material-symbols-outlined">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="areaTecnologia.html" class="card-link">
+                            <img src="img/standard-quality-control-collage-concept.jpg" alt="Imagem Médico" class="card-image">
+                            <h2 class="card-title">Tecnologia nos Processos de Controle</h2>
+                            <button class="card-button
+                            material-symbols-outlined">arrow_forward</button>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
             </div>
         </div>
     </section>
@@ -396,6 +336,8 @@
         <p>Copyright © Carrazzoni, Campêlo e Medeiros Advocacia</p>
     </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+    <script src="swiper.js"></script>
 </body>
 </html>

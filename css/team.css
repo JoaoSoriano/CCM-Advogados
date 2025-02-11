@@ -4,16 +4,28 @@ body, html {
     width: 100%;
     height: 100%;
 }
+
+.h2socios {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
+    font-size: 3em;
+    color: black;
+    margin-bottom: 40px;
+    margin-top: 2px;
+}
+
 .team-two__single {
     position: relative;
     display: block;
     margin-bottom: 30px;
+    max-width: 400px;
     width: 28%;
     height: 28%;
 }
 
 .team-two__single::before {
     content: "";
+    width: 323px;
     position: absolute;
     top: 40px;
     left: 40px;
@@ -26,6 +38,7 @@ body, html {
 .team-two__single::after {
     content: "";
     position: absolute;
+    width: 323px;
     top: 40px;
     left: 40px;
     bottom: 0px;
@@ -50,7 +63,6 @@ body, html {
 .team-two__single-img {
     position: relative;
     display: block;
-    margin-right: 65px;
     overflow: hidden;
 }
 
@@ -84,7 +96,7 @@ body, html {
 .team-two__single-img .social-share-box {
     position: absolute;
     top: 30px;
-    right: 30px;
+    right: 20px;
     z-index: 3;
 }
 

@@ -1,0 +1,173 @@
+.areas-atuacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    background-image: url(../img/PATER.png);
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: repeat; /* Evita repetição da imagem */
+}
+
+.areas-atuacao::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+}
+
+.h2areas-atuacao {
+    position: absolute;
+    top: 5vw; /* Ajusta dinamicamente a posição */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
+    font-size: 2.5vw; /* Adapta o tamanho do texto à tela */
+    color: black;
+    margin: 0;
+    padding: 0 10px; /* Pequena margem lateral para evitar corte */
+}
+
+.card-wrapper {
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.card-list {
+    display: flex;
+    align-items: stretch;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+}
+
+.card-link {
+    flex-grow: 1; /* Faz com que os cards ocupem o mesmo espaço */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui os elementos dentro do card */
+}
+
+.card-link {
+    min-height: 300px; /* Ajuste conforme necessário */
+}
+
+.card-title {
+    min-height: 60px; /* Ajuste conforme necessário */
+}
+
+.card-list .card-item .card-link {
+    user-select: none;;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active {
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: #bb8a28;
+}
+
+.card-list .card-item {
+    list-style: none;
+}
+
+.card-list .card-item .card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .card-title {
+    font-size: 1.19rem;
+    font-weight: 600;
+    color: #000;
+    margin: 16px 0 18px;
+}
+
+.card-list .card-link .card-button {
+    height: 38.5px;
+    width: 38.5px;
+    color: #bb8a28;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    border: 2px solid #bb8a28;
+    background: none;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+    color: #fff;
+    background: #bb8a28;
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+    color: #bb8a28 !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    background-color: #bb8a28 !important;
+}
+
+.card-wrapper .swiper-pagination-bullet  {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #bb8a28;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+  color: #bb8a28;
+  margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+    .h2areas-atuacao {
+        top: 10vw; /* Mais espaço no topo */
+        font-size: 5vw; /* Maior legibilidade */
+    }
+
+    .card-wrapper {
+        margin: 0 20px 35px; /* Menos margem nas laterais */
+    }
+
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .h2areas-atuacao {
+        top: 12vw; /* Ajuste para telas muito pequenas */
+        font-size: 6vw; /* Letra maior para melhor leitura */
+    }
+
+    .card-wrapper {
+        margin: 0 10px 35px; /* Ajuste para telas muito pequenas */
+    }
+}
