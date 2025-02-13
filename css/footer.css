@@ -52,10 +52,15 @@
 .instagram-icon {
     width: 25px;
     height: 25px;
-    margin-top: 10px;
     filter: invert(100%);
     transition: transform 0.3s ease;
 }
+
+.icons-footer {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os ícones */
+}
+
 
 .instagram-icon:hover {
     transform: scale(1.1);
@@ -76,6 +81,13 @@ a {
     color: #fff;
     font-size: 12px;
     margin: 0;
+}
+
+.joao {
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+    text-decoration: underline;
 }
 
 /* ----- RESPONSIVIDADE ----- */
@@ -105,10 +117,16 @@ a {
     .footer-info a {
         margin: 10px auto 0;
     }
+
+    .icons-footer {
+        gap: 1px; /* Diminui o espaçamento entre os ícones */
+        justify-content: center;
+    }
+
 }
 
 /* Mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .footer {
         flex-direction: column;
         text-align: center;
@@ -155,4 +173,5 @@ a {
     .footer-bottom {
         width: 100vw;
     }
+
 }

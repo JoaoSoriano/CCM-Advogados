@@ -1,6 +1,7 @@
 /* Estilos Gerais */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Ajuste conforme necessário */
     height: 100vh; /* Usa a altura dinâmica do viewport */
     overflow-x: hidden; /* Previne rolagem lateral indesejada */
 }
@@ -70,7 +71,7 @@ nav {
     display: inline-flex;
     align-items: center;
     overflow: hidden;
-    padding: 5px 15px;
+    padding: 5px 20px;
     margin-right: 30px;
     margin-left: 30px;
     background-color: transparent;

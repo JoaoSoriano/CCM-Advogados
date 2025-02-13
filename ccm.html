@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrazzoni, Campêlo e Medeiros Advocacia</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/Avatar Carrazzoni Campelo e Medeiros Ícone Escuro.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/Avatar Carrazzoni Campelo e Medeiros Ícone.png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/team.css">
     <link rel="stylesheet" href="css/areasAtuacao.css">
+    <link rel="stylesheet" href="css/diferenciais.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsiveTeam.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
     <style>
@@ -142,11 +144,6 @@
                                     <img src="img/whatsapp.svg" class="social-icon" alt="whatsapp">
                                 </a>
                             </li>
-                            <li>
-                                <a href="">
-                                    <img src="img/icons8-linkedin.svg" class="social-icon" alt="LinkedIn">
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -190,97 +187,78 @@
         </div>
     </section>
 
-    <!-- <section id="areas-atuacao">
-        <div class="servicos">
-            <div class="sec-title-three">
-                <div>
-                    <h2 style="color: rgb(0, 0, 0);">Áreas de Atuação</h2>
+        <div class="areas-atuacao" id="areas-atuacao">
+            <div class="service-wrapper">
+                <div class="service">
+                    <h1 class="h1AreasAtuacao">Áreas de Atuação</h1>
                 </div>
-                <h3 class="sub-title" style="color: rgb(0, 0, 0);">
-                   Consultivo & Contencioso 
-                </h3>
+                <div class="cards">
+                    <div class="card">
+                        <i class="fa-solid fa-stethoscope"></i>
+                        <h2 class="service-h2">Direito Médico</h2>
+                        <p class="service-p">Nossa atuação no Direito Médico abrange desde a consultoria jurídica para garantir o cumprimento das normas vigentes, até a defesa em casos de alegações de erro médico e outras questões legais. Oferecemos também suporte em gerenciamento de riscos, assessoria juridica e empresárial para clinicas, com elaboração de documentos legais, regularização Sanitária, Revisão de Contratos específicos para o setor.</p>
+
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-tooth"></i>
+                        <h2 class="service-h2">Direito Odontológico</h2>
+                        <p class="service-p">O Direito Odontológico envolve a proteção legal dos Cirurgiões-Dentostas e profissionais da área, assegurando o cumprimento das normas e regulamentações éticas. Atuamos na defesa contra alegações de erro odontológico e em processos éticos, além de oferecer consultoria em elaboração de contratos, gerenciamento de riscos e assessoria juridica e empresárial para clinicas.</p>
+                        
+                    </div>
+                    <div class="card">
+                        <i class="fa fa-heartbeat"></i>
+                        <h2 class="service-h2">Direito a Saúde</h2>
+                        <p class="service-p">O Direito à Saúde concentra-se na defesa dos direitos dos pacientes no âmbito dos planos de saúde e do SUS. Atuamos para garantir a cobertura de tratamentos essenciais, combater reajustes abusivos e resolver conflitos através de vias administrativas e judiciais. No contexto do SUS, promovemos ações para assegurar o fornecimento de medicamentos e procedimentos necessários que não estão disponíveis na rede pública.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <h2 class="service-h2">Direito Administrativo</h2>
+                        <p class="service-p">Atuamos na defesa dos direitos de candidatos em concursos públicos que enfrentam reprovação em fases do processo seletivo. Oferecemos assessoria jurídica para identificar irregularidades, avaliar conformidade com regulamentos e recorrer de decisões injustas.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-globe"></i>
+                        <h2 class="service-h2">Direito Empresarial</h2>
+                        <p class="service-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magni quo necessitatibus labore hic, tenetur illo officia vero quos mollitia voluptas deleniti quas sed iusto, cumque aliquid voluptatem ducimus sunt quam quia in, et delectus! Perferendis animi magni dicta architecto ducimus. Reprehenderit incidunt voluptatum esse odio quibusdam officiis tempora eligendi.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-file-shield"></i>
+                        <h2 class="service-h2">Integridade, Compliance e Adequação à LGPD</h2>
+                        <p class="service-p">Atuamos na adequação à LGPD, auxiliando na implementação de medidas como mapeamento de dados, elaboração de políticas de privacidade e treinamentos. Realizamos due diligence para mitigar riscos de dados em fusões. Elaboramos contratos, termos de uso e estratégias para e-commerce seguro, assegurando a proteção de dados pessoais e conformidade legal.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h2 class="service-h2">Direito Trabalhista</h2>
+                        <p class="service-p">Oferecemos consultoria jurídica especializada em legislação trabalhista, garantindo a conformidade com a CLT, acordos coletivos e convenções sindicais. Nossa atuação inclui a elaboração e análise de contratos de trabalho, bem como a gestão eficiente de recursos humanos. Ajudamos a prevenir litígios trabalhistas, identificando potenciais conflitos e implementando medidas preventivas adequadas.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-building"></i>
+                        <h2 class="service-h2">Direito Condominial</h2>
+                        <p class="service-p">Oferecemos análise e elaboração de convenções e regimentos internos de condomínios, garantindo conformidade legal e adequação às necessidades específicas. Além disso, analisamos contratos de prestação de serviços, seguros, manutenção e reformas, assegurando uma gestão condominial eficiente e harmoniosa.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-handshake"></i>
+                        <h2 class="service-h2">Extrajudicial e Mediação</h2>
+                        <p class="service-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo voluptatibus ex doloremque eaque optio mollitia exercitationem, quos in minus natus quae eveniet laudantium, quod id, voluptatem nihil quisquam ut beatae libero perferendis ratione neque et! Magnam dignissimos officiis dicta assumenda magni, alias expedita repellat rem ut adipisci molestiae, tenetur doloremque.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <div class="areas-atuacao">
-
-            <div class="area-item">
-                <div class="icon-container">
-                    <img src="img/local_hospital_24dp_E8EAED.svg" alt="Ícone 1" style="background-color: rgba(225, 149, 28, 0.873); border-radius: 20%;">
-                </div>
-                <h4 class="font-correct">Direito Médico Odontológico e da Saúde</h4>
-                <p>Descrição da área de atuação 1</p>
-            </div>
-        
-            <div class="area-item">
-                <div class="icon-container">
-                    <img src="img/person_24dp_E8EAED.svg" alt="Ícone 2" style="background-color: rgba(225, 149, 28, 0.873); border-radius: 20%;">
-                </div>
-                <h4 class="font-correct">Cível</h4>
-                <p>Descrição da área de atuação 2</p>
-            </div>
-
-            <div class="area-item">
-                <div class="icon-container">
-                    <img src="img/work_24dp_E8EAED.svg" alt="Ícone 3" style="background-color: rgba(225, 149, 28, 0.873); border-radius: 20%;">
-                </div>
-                <h4 class="font-correct">Trabalhista</h4>
-                <p>Descrição da área de atuação 3</p>
-            </div>
-        
-            <div class="area-item">
-                <div class="icon-container">
-                    <img src="img/language_24dp_E8EAED.svg" alt="Ícone 4" style="background-color: rgba(225, 149, 28, 0.873); border-radius: 20%;">
-                </div>
-                <h4 class="font-correct">Privacidade e Proteção de Dados</h4>
-                <p>Descrição da área de atuação 4</p>
-            </div>
-        
-            <div class="area-item">
-                <div class="icon-container">
-                    <img src="img/shopping_cart_24dp_E8EAED.svg" alt="Ícone 5" style="background-color: rgba(225, 149, 28, 0.873); border-radius: 20%;">
-                </div>
-                <h4 class="font-correct">Consumidor</h4>
-                <p>Descrição da área de atuação 5</p>
-            </div>
-        
-            <div class="area-item">
-                <div class="icon-container">
-                    <img src="img/balance_24dp_E8EAED.svg" alt="Ícone 6" style="background-color: rgba(225, 149, 28, 0.873); border-radius: 20%;">
-                </div>
-                <h4 class="font-correct">Extrajudicial: Mediação</h4>
-                <p>Descrição da área de atuação 6</p>
-            </div>
-        
-            <div class="area-item">
-                <div class="icon-container">
-                    <img src="img/elderly_24dp_E8EAED.svg" alt="Ícone 7" style="background-color: rgba(225, 149, 28, 0.873); border-radius: 20%;">
-                </div>
-                <h4 class="font-correct">Previdenciário</h4>
-                <p>Descrição da área de atuação 7</p>
-            </div>
-        
-            <div class="area-item">
-                <div class="icon-container">
-                    <img src="img/apartment_24dp_E8EAED.svg" alt="Ícone 8" style="background-color: rgba(225, 149, 28, 0.873); border-radius: 20%;">
-                </div>
-                <h4 class="font-correct">Condominial</h4>
-                <p>Descrição da área de atuação 8</p>
-            </div>
-        </div>      
-    </section> -->
     
-    <section class="areas-atuacao">
-        <h2 class="h2areas-atuacao">
-            Áreas de Atuação
+    <div class="titulo-diferenciais" id="diferenciais">
+        <h2 class="h2diferenciais">
+            Diferenciais
         </h2>
+        <p class="diferenciais-p">Compromisso e excelência nas especialidades que nos destacam</p>
+    </div>
+    
+    <section class="diferenciais">
         <div class="container swiper">
             <div class="card-wrapper">
                 <ul class="card-list swiper-wrapper">
                     <li class="card-item swiper-slide">
                         <a href="areaSaude.html" class="card-link">
                             <img src="img/Depositphotos_155109690_S.jpg" alt="Imagem Médico" class="card-image">
-                            <h2 class="card-title">Direito para Profissionais da Saúde</h2>
+                            <h2 class="card-title">Direito para Profissionais da Saúde.</h2>
                             <button class="card-button
                             material-symbols-outlined">arrow_forward</button>
                         </a>
@@ -288,7 +266,7 @@
                     <li class="card-item swiper-slide">
                         <a href="areaAssPrev.html" class="card-link">
                         <img src="img/_DSC9892.jpg" alt="Imagem Escritório" class="card-image">
-                        <h2 class="card-title">Assessoria Jurídica Preventiva</h2>
+                        <h2 class="card-title">Assessoria Jurídica Preventiva.</h2>
                         <button class="card-button
                         material-symbols-outlined">arrow_forward</button>
                         </a>
@@ -296,7 +274,7 @@
                     <li class="card-item swiper-slide">
                         <a href="areaPrivDados.html" class="card-link">
                             <img src="img/Depositphotos_59212289_XL.jpg" alt="Imagem Médico" class="card-image">
-                            <h2 class="card-title">Privacidade e Proteção de Dados</h2>
+                            <h2 class="card-title">Privacidade e Proteção de Dados (LGPD).</h2>
                             <button class="card-button
                             material-symbols-outlined">arrow_forward</button>
                         </a>
@@ -304,7 +282,7 @@
                     <li class="card-item swiper-slide">
                         <a href="areaTecnologia.html" class="card-link">
                             <img src="img/standard-quality-control-collage-concept.jpg" alt="Imagem Médico" class="card-image">
-                            <h2 class="card-title">Tecnologia nos Processos de Controle</h2>
+                            <h2 class="card-title">Tecnologia nos Processos de Controle.</h2>
                             <button class="card-button
                             material-symbols-outlined">arrow_forward</button>
                         </a>
@@ -325,15 +303,20 @@
             <div class="footer-info">
                 <p>Empresarial Selecta Center, sala 404 - Rua Estado de Israel, nº 262, Ilha do Leite - Recife/PE, 50070-420</p>
                 <p>Telefone: (81) 99865-6909</p>
-                <a href="https://www.instagram.com/carrazzonicampeloemedeiros?igsh=MWRqdzcwMG93enU2" target="_blank">
-                    <img src="img/instagram.svg" alt="Instagram" class="instagram-icon">
-                </a>
+                <div class="icons-footer">
+                    <a href="https://www.instagram.com/carrazzonicampeloemedeiros?igsh=MWRqdzcwMG93enU2" target="_blank">
+                        <img src="img/instagram.svg" alt="Instagram" class="instagram-icon">
+                    </a>
+                    <a href="https://wa.me/5581998656909" target="_blank">
+                        <img src="img/whatsapp.svg" alt="Whatsapp" class="instagram-icon">
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
     
     <div class="footer-bottom">
-        <p>Copyright © Carrazzoni, Campêlo e Medeiros Advocacia</p>
+        <p>Copyright © Carrazzoni, Campêlo e Medeiros Advocacia - Desenvolvido por: <a class="joao" href="https://www.linkedin.com/in/jo%C3%A3o-rafael-soriano-correia-3106351a1/" target="_blank">João Rafael Soriano</a></p>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

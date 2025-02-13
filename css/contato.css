@@ -72,7 +72,7 @@ h2 {
 }
 
 .icon-container {
-    background-color:  #a49483;
+    background-color: rgb(226, 218, 198);
     border-radius: 50%;
     padding: 10px;
     width: 40px;
@@ -137,11 +137,28 @@ textarea {
     resize: vertical;
 }
 
-/* .enviar{
-    cursor: pointer;
-    
-} */
+.form-button {
+    background-color: #1a1a1a; /* Cor escura para elegância */
+    color: #ffffff; /* Texto branco para contraste */
+    font-size: 1.2em; /* Tamanho do texto */
+    font-family: 'Montserrat', sans-serif; /* Fonte moderna */
+    padding: 12px 24px; /* Espaçamento interno */
+    border: 2px solid #1a1a1a; /* Borda sutil */
+    border-radius: 8px; /* Cantos arredondados */
+    cursor: pointer; /* Ícone de clique */
+    transition: all 0.3s ease-in-out; /* Suaviza transições */
+    display: flex; /* Centraliza o texto */
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Faz o botão se ajustar */
+    max-width: 200px; /* Mantém um tamanho agradável */
+    margin: auto; /* Centraliza */
+}
 
+.form-button:hover {
+    background-color: transparent; /* Deixa apenas a borda visível */
+    color: #1a1a1a; /* Inverte a cor do texto */
+}
 
 /* Responsividade */
 @media only screen and (max-width: 970px) {

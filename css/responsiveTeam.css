@@ -7,6 +7,15 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
+	.socios {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 20px; /* Espaçamento entre os elementos */
+		flex-wrap: wrap; /* Permite quebra caso a tela fique muito pequena */
+	}
+  
+
   .team-two__single-content {
 		padding: 16px 45px 17px;
 	}
@@ -68,19 +77,6 @@
 
 	.team-two__single::after {
 		left: 20px;
-	}
-
-	.team-two__single-img .social-share-box ul li a {
-		height: 40px;
-		width: 40px;
-		font-size: 15px;
-	}
-
-	.team-two__single-img .social-share-box span {
-		width: 40px;
-		height: 40px;
-		font-size: 15px;
-		line-height: 40px;
 	}
 
 	.team-two__single {
